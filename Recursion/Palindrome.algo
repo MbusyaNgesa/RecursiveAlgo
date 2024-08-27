@@ -1,0 +1,15 @@
+ALGORITHM palindrome
+VAR
+    name, newName: STRING;
+    i : INTEGER;
+BEGIN
+    newName := LENGTH(name); 
+
+    FOR i FROM 0 TO newName DO
+        IF (name[i] !== name[newName - 1 - i]) THEN
+            write ("False")
+            RETURN
+        END_IF
+    END_FOR
+    write (True)
+END

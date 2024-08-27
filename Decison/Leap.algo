@@ -1,6 +1,11 @@
-IF ((x % 4 === 0 && x % 100 !== 0) || x % 400 == 0) THEN
+ALGORITHM leap_year
+VAR
+    x: INTEGER;
+    year: STRING;
+BEGIN
+   IF ((x % 4 === 0 && x % 100 !== 0) || x % 400 == 0) THEN
     leap_year := "Leap Year "
-ELSE
-    leap_year := "Not Leap Year"
-END_IF
-
+    ELSE
+        leap_year := "Not Leap Year"
+    END_IF
+END
