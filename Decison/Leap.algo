@@ -1,0 +1,5 @@
+IF ((x % 4 === 0 && x % 100 !== 0) || x % 400 == 0) THEN
+    leap_year := "Leap Year "
+ELSE
+    leap_year := "Not Leap Year"
+END_IF

@@ -1,0 +1,15 @@
+/*Ticket Pricing: Write a program that prompts the user to enter
+ their age and then determines the price of a movie ticket based
+  on the following criteria:
+
+Children (age <= 12): $10
+Teenagers (age 13-17): $15
+Adults (age >= 18): $20 */
+
+IF (age <= 12) THEN
+    ticket_price := $10;
+ELSE_IF (age <= 17) THEN
+    ticket_price := $15;
+ELSE
+    ticket_price := $20;
+END_IF
