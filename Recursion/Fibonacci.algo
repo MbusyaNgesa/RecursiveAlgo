@@ -1,0 +1,18 @@
+ALGORITHM fibonacci_for
+VAR
+    n1, n2, nextNum : INTEGER;
+    i, nums : INTEGER;
+    fiboSeq: ARRAY OF INTEGER;
+BEGIN
+    n1:=0;
+    n2:=1;
+    fiboSeq:=[n1+n2];
+
+    FOR i FROM 3 TO nums DO
+        nextNum:= n1 + n2;
+        fiboSeq: fiboSeq (nextNum);
+        n1:=n2;
+        n2:nextNum;
+    END_FOR
+    write(fiboSeq)
+END
